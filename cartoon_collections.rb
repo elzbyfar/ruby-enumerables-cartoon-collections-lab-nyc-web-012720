@@ -20,8 +20,7 @@ def find_the_cheese(foods)
   cheese_types = ["cheddar", "gouda", "camembert"]
   i = 0 
   while i < cheese_types.length do 
-    foods.include? { |food| food == cheese_types[i] }
-    return cheese_types[i]
+    foods.find { |food| food == cheese_types[i] }
     i+=1 
   end 
   nil
