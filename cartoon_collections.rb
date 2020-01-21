@@ -1,11 +1,15 @@
 def roll_call_dwarves(dwarves_array)
   numberedwarves = dwarves_array.each_with_index do |dwarf, index|
-    puts "#{index + 1} #{dwarf}"
+    "#{index + 1} #{dwarf}"
   end 
+  puts numberedwarves
 end
 
-def summon_captain_planet# code an argument here
-  # Your code here
+def summon_captain_planet(planeteer_calls)
+  loud_and_caps = planeteer_calls.map do |call|
+    "#{call.capitalize}!"
+  end
+  loud_and_caps
 end
 
 def long_planeteer_calls# code an argument here
