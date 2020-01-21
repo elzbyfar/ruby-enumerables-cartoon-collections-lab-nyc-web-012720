@@ -14,7 +14,7 @@ end
 
 shouts = %w[waddup aye holler no nonesense]
 def long_planeteer_calls(calls)
-  calls.any? { |call| call.length > 4 }
+  calls.any? { |call| call.length > 9 }
 end
 
 def find_the_cheese# code an argument here
