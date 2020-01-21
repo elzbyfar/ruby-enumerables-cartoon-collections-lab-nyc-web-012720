@@ -12,6 +12,7 @@ def summon_captain_planet(planeteer_calls)
   loud_and_caps
 end
 
+shouts = %w[waddup aye holler no nonesense]
 def long_planeteer_calls(calls)
   calls.any? { |call| call.length > 4 }
 end
@@ -20,3 +21,6 @@ def find_the_cheese# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
 end
+
+
+puts long_planeteer_calls(shouts)
