@@ -1,8 +1,8 @@
 def roll_call_dwarves(dwarves_array)
   numberedwarves = dwarves_array.each_with_index do |dwarf, index|
-    "#{index + 1} #{dwarf}"
+    puts "#{index + 1} #{dwarf}"
   end 
-  puts numberedwarves
+  numberedwarves
 end
 
 def summon_captain_planet(planeteer_calls)
